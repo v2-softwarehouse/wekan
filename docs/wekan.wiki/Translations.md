@@ -23,7 +23,7 @@ Transifex to be translated (the refresh may take a few hours).
 
 Then in your JADE files, use the string like so:
 
-`h3.card-details-item-title {{_ 'members'}}`
+<!-- `h3.card-details-item-title {{_ 'members'}}` -->
 
 We pull all translations from Transifex before every new Wekan release
 candidate, ask the translators to review the app, and pull all translations

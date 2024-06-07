@@ -16,7 +16,6 @@ When a new card is created on board
   "boardId": "{{board-id}}",
   "user": "{{wekan-username}}",
   "card": "{{card-title}}",
-  "swimlaneId": "{{swimlane-id}}",
   "description": "act-createCard"
 }
 ```
@@ -34,7 +33,6 @@ When a card is moved beweteen lists
   "boardId": "{{board-id}}",
   "user": "{{wekan-username}}",
   "card": "{{card-title}}",
-  "swimlaneId": "{{swimlane-id}}",
   "description": "act-moveCard"
 }
 ```
@@ -51,7 +49,6 @@ A card is moved to archive
   "boardId": "{{board-id}}",
   "user": "{{wekan-username}}",
   "card": "{{card-title}}",
-  "swimlaneId": "{{swimlane-id}}",
   "description": "act-archivedCard"
 }
 ```
@@ -68,7 +65,6 @@ When a card is restored from archive
   "boardId": "{{board-id}}",
   "user": "{{wekan-username}}",
   "card": "{{card-title}}",
-  "swimlaneId": "{{swimlane-id}}",
   "description": "act-restoredCard"
 }
 ```
@@ -108,7 +104,6 @@ A user edits a comment on the card
   "user": "{{wekan-username}}",
   "card": "{{card-title}}",
   "commentId": "{{comment-id}}",
-  "swimlaneId": "{{swimlane-id}}",
   "description": "act-editComment"
 }
 ```
@@ -125,7 +120,6 @@ A label is added to card
   "boardId": "{{board-id}}",
   "user": "{{wekan-username}}",
   "card": "{{card-title}}",
-  "swimlaneId": "{{swimlane-id}}",
   "description": "act-addedLabel"
 }
 ```
@@ -142,7 +136,6 @@ When a member is added to card
   "boardId": "{{board-id}}",
   "user": "{{wekan-username}}",
   "card": "{{card-title}}",
-  "swimlaneId": "{{swimlane-id}}",
   "description": "act-joinMember"
 }
 ```
@@ -285,7 +278,7 @@ Webhooks that are raised on board events
 
 Webhooks that are raised on list events
 
-### Create list 
+### Create list
 
 ```json
 {
@@ -330,7 +323,6 @@ Webhooks that are raised on list events
   "text": "{{wekan-username}} created swimlane \"{{swimlane-name}}\" to board \"{{board-name}}\"\nhttp://{{wekan-host}}/b/{{board-id}}/{{board-name}}",
   "boardId": "{{board-id}}",
   "user": "{{wekan-username}}",
-  "swimlaneId": "{{swimlane-id}}",
   "description": "act-createSwimlane"
 }
 ```
@@ -342,7 +334,6 @@ Webhooks that are raised on list events
   "text": "{{wekan-username}} Swimlane \"{{swimlane-name}}\" at board \"{{board-name}}\" moved to Archive\nhttp://{{wekan-host}}/b/{{board-id}}/{{board-name}}",
   "boardId": "{{board-id}}",
   "user": "{{wekan-username}}",
-  "swimlaneId": "{{swimlane-id}",
   "description": "act-archivedSwimlane"
 }
 ```
@@ -354,7 +345,6 @@ Webhooks that are raised on list events
   "text": "{{wekan-username}} act-removeSwimlane\nhttp://{{wekan-host}}/b/{{board-id}}/{{board-name}}",
   "boardId": "{{board-id}}",
   "user": "{{wekan-username}}",
-  "swimlaneId": "{{swimlane-id}",
   "description": "act-removeSwimlane"
 }
 ```
